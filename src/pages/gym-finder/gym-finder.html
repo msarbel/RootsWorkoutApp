@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-navbar color="custom-color">
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Location</ion-title>
+    
+  </ion-navbar>
+</ion-header>
+<!-- Option for gym and fitness center search -->
+<ion-content class="bg-style" padding>
+<ion-item>
+  <ion-label>Select Place</ion-label>
+    <ion-select [(ngModel)]="isType" (ionChange)="nearbyPlace()">
+    <ion-option value="">Select</ion-option>
+      <ion-option value="fitness">Fitness Center</ion-option>
+      <ion-option value="gym">Gym</ion-option>
+
+    </ion-select>
+  </ion-item>
+  <!-- Select the distance from your geolocation point-->
+  <ion-item>
+  <ion-label>Select Distance</ion-label>
+    <ion-select [(ngModel)]="isM" (ionChange)="nearbyPlace()">
+    <ion-option value="500">Select</ion-option>
+      <ion-option value="2000">2m</ion-option>
+      <ion-option value="4000">4m</ion-option>
+      <ion-option value="6000">6m</ion-option>
+      <ion-option value="8000">8m</ion-option>
+    </ion-select>
+  </ion-item>
+ 
+    <div #map id="map"></div>
+	
+</ion-content>

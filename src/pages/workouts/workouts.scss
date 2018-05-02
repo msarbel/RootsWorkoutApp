@@ -1,0 +1,50 @@
+page-workouts {
+
+    table { border-collapse: collapse; font-family: Futura, Arial, sans-serif; }
+    caption { font-size: larger; }
+    th, td { padding: .5em; color: wheat}
+    th, thead { background: wheat; color: rgba(0, 0, 0, 0.5); border: 1px solid #000; }
+    tr { background: rgba(70, 70, 70, 0.5); }
+    tr:hover { background: #def; }
+    td { border-right: 1px solid #777; }
+    table { border: 2px solid #777; }
+    input { background-color: black; }
+
+input.rounded {
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 2px 2px 3px #666;
+	-webkit-box-shadow: 2px 2px 3px #666;
+	box-shadow: 2px 2px 3px #666;
+	font-size: 12px;
+	padding: 4px 7px;
+	outline: 0;
+	-webkit-appearance: none;
+}
+input.rounded:focus {
+	border: 4px solid;
+	border-color: rgb(70, 58, 248);
+}       
+
+    background-color: grey;
+
+    h3, h1 {
+        color: wheat;
+        font-size: 80px;
+    }
+
+    h4 {
+        color: wheat;
+    }
+
+    .row {
+        padding: 0px !important;
+     }
+
+     .header {
+         background-color: black;
+     }
+
+}

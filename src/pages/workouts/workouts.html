@@ -1,0 +1,91 @@
+<ion-header>
+    <ion-navbar color="custom-color">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Workouts</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- Modal links for weekly workouts -->
+<ion-content class="bg-style" padding>
+    <ion-list>
+        <ion-list-header class="header">
+          <h1>Workouts of the Week</h1>
+        </ion-list-header>
+        <a ion-item (click)="openModal({charNum: 0})">
+          Powerlifting Basics
+          <br>
+          <img src="https://t4.ftcdn.net/jpg/01/34/19/03/240_F_134190301_eLee8aX5Z7DmihBPJCsa3yNCKR3B4j9Y.jpg">
+        </a>
+        <a ion-item (click)="openModal({charNum: 1})">
+          Muscular Endurance
+          <br>
+          <img src="https://t4.ftcdn.net/jpg/01/08/26/51/240_F_108265119_f8ex46LwUwqnqbuPAlAeepXOUlF7Z5t5.jpg">
+        </a>
+        <a ion-item (click)="openModal({charNum: 2})">
+            Circuit Crush
+            <br>
+          <img src="https://t4.ftcdn.net/jpg/00/98/97/89/240_F_98978930_Qq4AZDC7l7FjNCVvkmIRIWESYnYb6poM.jpg">
+          
+        </a>
+      </ion-list>
+
+      <div class="container-fluid">
+          <div class="row">
+            
+            <div class="col-md-10">
+              <!--Custom Workout Table Below-->
+        
+        
+              <table>
+              <caption><h4>TRACK CUSTOM WORKOUT</h4></caption>
+              <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Reps</th>
+                    <th>Sets</th>
+                    <th>Weight</th>
+                    <th>Exercise Tonnage</th>
+                    <th>Total Tonnage {{updateTotal()}} lbs </th>
+                </tr>
+              </thead>
+              <tbody >
+                <tr *ngFor="let exercise of exercises; let i = index">
+                    <td>
+                        <input [(ngModel)]="exercise.title" size="20" class='rounded'>
+                    </td>
+                    <td>
+                        <input [(ngModel)]="exercise.qty" size="2"  class='rounded' >
+                    </td>
+                    <td>
+                        <input [(ngModel)]="exercise.set" size="6" class='rounded' >
+                    </td>
+                    <td>
+                        <input [(ngModel)]="exercise.weight" size="6" class='rounded' >
+                    </td>
+                    <td>{{exercise.weight * exercise.set * exercise.qty }} lbs </td>
+                    <td>
+                        <button  ion-button icon-end (click)="removeExercise(i)">
+                            Remove
+                            <ion-icon name="unlock"></ion-icon>
+                        </button>
+                    </td>
+                </tr>
+                <tr><th colspan="3"><button (click)="addExercise()" ion-button color="secondary">
+                            New
+                        </button></th>
+                        <th colspan="3"><button (click)="saveWorkout()" ion-button color="secondary">
+                            Save
+                        </button></th>
+                        
+                        </tr>
+                
+              </tbody>
+            </table>
+        
+        
+            </div>
+          </div>
+        </div>
+  </ion-content>

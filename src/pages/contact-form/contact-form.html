@@ -1,0 +1,43 @@
+<!--
+  Generated template for the ContactFormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="custom-color">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Home</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content class="bg-style" padding>
+
+  <form (ngSubmit)="contactForm()">
+  <ion-card>
+    <ion-list>
+
+        <ion-item>
+          <ion-input type="text" placeholder="Coach Name"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input type="email" placeholder="Email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="text" placeholder="Question"></ion-input>
+          </ion-item>
+
+      </ion-list>
+
+      <button ion-button type="submit" block> Submit </button>
+
+    </ion-card>
+
+  </form>
+
+
+</ion-content>

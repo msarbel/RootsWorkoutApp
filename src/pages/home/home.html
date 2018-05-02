@@ -1,0 +1,84 @@
+<ion-header>
+    <ion-navbar color="custom-color">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home Page - User Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+        
+
+
+<ion-content class="bg-style" width="50%"padding>
+
+    <ion-card>
+        <img src="https://www.elitefts.com/wp/wp-content/uploads/2015/05/elitefts-deadlift.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            ROOTS
+            </ion-card-title>
+          <p>
+            Build your base. Find your roots.
+          </p>
+        </ion-card-content>
+        <!-- thoughts of adding the ability to hook to your spotify, share your current goals, login/logout -->
+        <ion-row no-padding>
+            <ion-col>
+              <button ion-button clear small color="danger" icon-start>
+                <ion-icon name='star'></ion-icon>
+                Username: Msarb
+              </button>
+            </ion-col>
+            <ion-col text-center>
+              <button ion-button clear small color="danger" icon-start>
+                <ion-icon name='musical-notes'></ion-icon>
+                Spotify
+              </button>
+            </ion-col>
+            <ion-col text-right>
+              <button ion-button clear small color="danger" icon-start>
+                <ion-icon name='share-alt'></ion-icon>
+                Share
+              </button>
+            </ion-col>
+          </ion-row>
+      </ion-card>
+
+
+  <ion-card width="50%">
+      <ion-card-header>
+        Your Bodyfat Percentage
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #barCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+ 
+    <ion-card>
+      <ion-card-header>
+        Your total of 3 major lifts
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #doughnutCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+ 
+    <ion-card>
+      <ion-card-header>
+        Calorie Intake
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #lineCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+ 
+
+
+  <p>
+    Back to your roots.
+  </p>
+
+
+</ion-content>

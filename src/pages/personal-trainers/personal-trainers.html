@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-navbar color="custom-color">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Personal Trainers</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-style" padding>
+  <h3>Coaches</h3>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+  <ion-card>
+
+    <img src="https://www.steadymd.com/wp-content/uploads/2017/04/jordan-competing.jpg">
+    <ion-fab right top>
+      <button ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab>
+  
+    <ion-item>
+      <h2>Jordan Feiganbaum</h2>
+    </ion-item>
+  
+    <ion-item>
+      <span item-left>Specializes in Strength</span>
+      <button ion-button (click)="contact()" icon-left clear item-end>
+        <ion-icon name="navigate"></ion-icon>
+        Contact
+      </button>
+    </ion-item>
+  
+  </ion-card>
+  </ion-col>
+  <ion-col>
+
+  <ion-card>
+
+    <img src="http://www.underdogstrength.com/wp-content/uploads/2017/06/Alan-Thrall-Interview-Strongman-Powerlifting-Weightlifting2.jpg">
+    <ion-fab right top>
+      <button ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab>
+  
+    <ion-item>
+      <h2>Alan Thrall</h2>
+    </ion-item>
+  
+    <ion-item>
+      <span item-left>Specializes in Strongman</span>
+      <button ion-button (click)="contact()" icon-left clear item-end>
+          <ion-icon name="navigate"></ion-icon>
+          Contact
+        </button>
+    </ion-item>
+  
+  </ion-card>
+</ion-col>
+<ion-col>
+  <ion-card class="ptCard">
+
+    <img src="https://pbs.twimg.com/profile_images/646464387230756864/SfjyfyUt_400x400.jpg">
+    <ion-fab right top>
+      <button ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab>
+  
+    <ion-item>
+
+      <h2>Austin Baraki</h2>
+    </ion-item>
+  
+    <ion-item>
+      <span item-left>Specializes in Strength</span>
+      <button ion-button (click)="contact()" icon-left clear item-end>
+          <ion-icon name="navigate"></ion-icon>
+          Contact
+        </button>
+    </ion-item>
+  
+  </ion-card>
+</ion-col>
+  
+</ion-row>
+
+</ion-grid>
+
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar color="custom-color">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Exercise Overview</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg-style" padding>
+    <ion-card *ngFor="let video of videos"> <!-- loop through array and display -->
+      <ion-card-header>
+          {{video.title}}
+      </ion-card-header>
+      <ion-card-content>
+          <iframe width="100%" height="600" [src]="video.video | youtube" frameborder="0"></iframe>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>

@@ -1,0 +1,139 @@
+{
+    "items": [
+        {
+            "name": "Upper Body",
+            "children": [
+                {
+                "name": "Chest",
+                    "children": [
+                        {
+                            "name": "Bench Press",
+                            "information": "Normal competition style bench"
+                            
+                        },
+                        {
+                            "name": "2ct Pause Bench Press",
+                            "information": "Pause for 2 seconds on chest"
+                            
+                        },
+                        {
+                            "name": "Close grip Bench",
+                            "information": "Narrow grip relative to competition bench"
+                        }
+
+                    ]
+                },
+                {
+                    "name": "Back",
+                    "children": [
+                        {
+                            "name": "Barbell Row",
+                            "information": ""
+                        },
+                        {
+                            "name": "Lat Pulldown",
+                            "information": ""
+                        },
+                        {
+                            "name": "Dumbbell Single Arm Row",
+                            "information": ""
+                        },
+                        {
+                            "name": "Face Pulls",
+                            "information": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Shoulders",
+                    "children": [
+                        {
+                            "name": "Overhead Press",
+                            "information": ""
+                        },
+                        {
+                            "name": "Lateral Raises",
+                            "information": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lower Body",
+            "children": [
+                {
+                    "name": "Quads",
+                    "children": [
+                        {
+                            "name": "Front Squat",
+                            "information": ""
+                        },
+                        {
+                            "name": "Back Squat",
+                            "information": "",
+                            "video": "https://www.youtube.com/watch?v=e5FbyMzSTAY&feature=youtu.be"
+                        }
+                    ]
+                },
+                {
+                    "name": "Hamstrings",
+                    "children": [
+                        {
+                            "name": "Deadlift",
+                            "information": ""
+                        },
+                        {
+                            "name": "RDL",
+                            "information": ""
+                        },
+                        {
+                            "name": "Hamstring Curl",
+                            "information": ""
+                        },
+                        {
+                            "name": "Single Leg DB SLDL",
+                            "information": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Glutes",
+                    "children": [
+                        {
+                            "name": "Hip Thrusts",
+                            "information": ""
+                        },
+                        {
+                            "name": "Barbell Extensions",
+                            "information": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mobility",
+            "children": [
+                {
+                    "name": "Full Squat Stretch",
+                    "information": ""
+                },
+                {
+                    "name": "Toe Touches",
+                    "information": ""
+                },
+                {
+                    "name": "Lower Body Dynamic",
+                    "information": ""
+
+                },
+                {
+                    "name": "Upper Body Dynamic",
+                    "information": ""
+
+                }
+            ]
+        }
+    ]
+}
